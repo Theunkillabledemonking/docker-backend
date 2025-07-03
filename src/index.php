@@ -6,6 +6,13 @@
     <title>Document</title>
   </head>
   <body>
-    <? print("hello");?>
+    <form action="userInfoProcess.php" method="post">
+      <fieldset style="width:300px">
+        <legend>이름과 나이를 입력하세요</legend>
+        이름 : <input type="text" name="user_name"> <br>
+        나이 : <input type="text" name="user_age">
+        <input type="submit" value="제출하기">
+      </fieldset>
+    </form>
   </body>
 </html>
