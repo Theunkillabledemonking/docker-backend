@@ -7,4 +7,8 @@
 // 4) 쿠키 읽기 (A)
 
 print_r($_COOKIE);
+echo time() - 3600;
+
+echo date(DATE_RFC822)."<br>";
+echo $_COOKIE['session_cookie'];
 ?>
