@@ -6,7 +6,7 @@ if (isset($_COOKIE['username'])) {
     $ice = htmlspecialchars($_COOKIE['ice']);
 
 
-    echo "$username 님의 주문 내용";
+    echo "<strong>$username</strong> 님의 주문 내용";
     echo "<li>라떼 수량: $latee 잔</li>";
     echo "<li>아이스 아메리카노 수량:: $ice 잔</li>";
 
@@ -15,7 +15,7 @@ if (isset($_COOKIE['username'])) {
 } else {
     echo "<form action='set_cookie.php' method='post'>
         이름: <input type='text' name='username'> <br>
-        라떼 수량: <input type='text' name='latee'> <br>
+        라떼 수량: <input type='text' name='latee' > <br>
         아이스 아메리카노 수량: <input type='text' name='ice'> <br>
         <button type='submit'>주문하기</button>
     </form>";
